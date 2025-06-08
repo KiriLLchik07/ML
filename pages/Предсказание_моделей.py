@@ -15,7 +15,7 @@ st.markdown("---")
 def load_models():
     models = {
         "Дерево решений": pickle.load(open("models/decision_tree.pkl", "rb")),
-        "Градиентный бустинг": pickle.load(open("models/gradient_boost.pkl", "rb")),
+        # "Градиентный бустинг": pickle.load(open("models/gradient_boost.pkl", "rb")),
         "Случайный лес": pickle.load(open("models/random_forest.pkl", "rb")),
         "Стекинг": pickle.load(open("models/stacking.pkl", "rb")),
     }
