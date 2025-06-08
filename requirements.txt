@@ -1,0 +1,9 @@
+catboost
+streamlit
+pandas
+scikit-learn
+catboost
+matplotlib
+cloudpickle
+seaborn
+scikit-learn
