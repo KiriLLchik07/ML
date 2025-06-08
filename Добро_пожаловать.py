@@ -47,5 +47,5 @@ st.markdown("""
 
 st.markdown("---")
 
-photo_path = "C:/Users/kiril/OneDrive/Рабочий стол/Учёба/2 курс/2 семестр/ML/РГР/data/letsGo.jpeg"
+photo_path = "data/letsGo.jpeg"
 st.image(photo_path, use_container_width=True)

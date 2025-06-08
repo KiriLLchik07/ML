@@ -12,7 +12,7 @@ st.title('Визуализация данных')
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv("C:/Users/kiril/OneDrive/Рабочий стол/Учёба/2 курс/2 семестр/ML/РГР/data/predData_regression.csv")
+    data = pd.read_csv("data/kc_house_data.csv")
     return data
 
 data = load_data()
