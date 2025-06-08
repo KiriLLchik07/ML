@@ -11,15 +11,17 @@ st.set_page_config(
 st.title("Инференс моделей ML")
 st.markdown("---")
 
-@st.cache_resource  
+@st.cache_resource
 def load_models():
     models = {
         "Дерево решений": pickle.load(open("models/decision_tree.pkl", "rb")),
         "Градиентный бустинг": pickle.load(open("models/gradient_boost.pkl", "rb")),
-        "CatBoost": CatBoostRegressor().load_model("models/catboost.cbm"),
         "Случайный лес": pickle.load(open("models/random_forest.pkl", "rb")),
         "Стекинг": pickle.load(open("models/stacking.pkl", "rb")),
     }
+    catboost_model = CatBoostRegressor()
+    catboost_model.load_model("models/catboost.cbm")
+    models["CatBoost"] = catboost_model
     return models
 
 models = load_models()
