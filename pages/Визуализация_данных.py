@@ -42,7 +42,7 @@ for feature in continuous_features:
     st.pyplot(fig5)
 
 num_features = ['sqft_living', 'sqft_lot', 'sqft_above', 'sqft_basement',
-                'zipcode', 'lat', 'long', 'sqft_living15', 'sqft_lot15', 'house_age', "sqft_lot_per_living"]
+                'zipcode', 'lat', 'long', 'sqft_living15', 'sqft_lot15']
 
 categor_features = ['floors', 'waterfront', 'view', 'condition', 'grade', "bedrooms"]
 
