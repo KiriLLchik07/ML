@@ -77,7 +77,7 @@ for feature in categor_features:
     sns.boxplot(x=feature, y="price", data=data, ax=ax6)
     st.pyplot(fig6)
 
-important_continuous_features = ['sqft_living', 'sqft_lot', 'lat', 'long', 'sqft_living15', "sqft_lot_per_living"]
+important_continuous_features = ['sqft_living', 'sqft_lot', 'lat', 'long', 'sqft_living15']
 
 st.subheader("Зависимость цены от наиболее важных непрерывных признаков")
 
